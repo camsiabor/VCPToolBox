@@ -5,12 +5,31 @@
 
 > **维护原则 / Maintenance Principle**: 只写文档，不改代码。Documents only — no code modifications.
 
+> **⚠️ 重要约定 / Important**: 本 Fork 仅用于文档分析，详见 **[REPO_ECOSYSTEM.md](./REPO_ECOSYSTEM.md)**。This fork is for documentation analysis only — see **[REPO_ECOSYSTEM.md](./REPO_ECOSYSTEM.md)**.
+
+---
+
+## 🌐 仓库生态 / Repository Ecosystem
+
+| 类型 / Type | 仓库 / Repo | 说明 / Description |
+|---|---|---|
+| 🔴 上游源码 / Upstream source | [lioensky/VCPToolBox](https://github.com/lioensky/VCPToolBox) | 权威代码来源 / Authoritative code source |
+| 🔴 上游源码 / Upstream source | [lioensky/VCPDistributedServer](https://github.com/lioensky/VCPDistributedServer) | 分布式节点服务 / Distributed node service |
+| 🔴 上游源码 / Upstream source | [lioensky/VCPChat](https://github.com/lioensky/VCPChat) | 官方聊天前端 / Official chat frontend |
+| 🔵 本 Fork / This fork | [camsiabor/VCPToolBox](https://github.com/camsiabor/VCPToolBox) | 📖 理解与分析文档 / Understanding & analysis docs |
+| 🔵 本 Fork / This fork | [camsiabor/VCPDistributedServer](https://github.com/camsiabor/VCPDistributedServer) | 📖 理解与分析文档 / Understanding & analysis docs |
+| 🔵 本 Fork / This fork | [camsiabor/VCPChat](https://github.com/camsiabor/VCPChat) | 📖 理解与分析文档 / Understanding & analysis docs |
+
+> 📋 完整的同步策略与操作规范: **[REPO_ECOSYSTEM.md](./REPO_ECOSYSTEM.md)**  
+> Full sync strategy & operating rules: **[REPO_ECOSYSTEM.md](./REPO_ECOSYSTEM.md)**
+
 ---
 
 ## 🗺️ 文档导航 / Navigation
 
 | 文档 / Document | 内容 / Content | 优先级 / Priority |
 |---|---|---|
+| **[REPO_ECOSYSTEM.md](./REPO_ECOSYSTEM.md)** | **仓库生态、Fork 关系、操作约定、上游同步策略 / Repo ecosystem, fork relationships, operating rules, upstream sync strategy** | **🔴 必读 / Must Read** |
 | [01_architecture/README.md](./01_architecture/README.md) | 系统整体架构、启动序列、核心三角 / Overall architecture, boot sequence, core triangle | ⭐⭐⭐ |
 | [02_plugin_system/README.md](./02_plugin_system/README.md) | 插件生态、六类插件、manifest 协议、VCP 工具调用语法 / Plugin ecosystem, 6 types, manifest spec, VCP tool-call syntax | ⭐⭐⭐ |
 | [03_memory_rag/README.md](./03_memory_rag/README.md) | 记忆系统、TagMemo 浪潮算法、EPA、残差金字塔、向量索引 / Memory system, TagMemo Wave, EPA, Residual Pyramid, vector index | ⭐⭐⭐ |
