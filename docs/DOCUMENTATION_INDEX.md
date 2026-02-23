@@ -45,6 +45,7 @@
 | [FILE_INVENTORY.md](./FILE_INVENTORY.md) | 所有重要文件的职责、入口、依赖关系 | ⭐ |
 | [FEATURE_MATRIX.md](./FEATURE_MATRIX.md) | 每项功能的入口、触发条件、处理流程、配置项 | ⭐ |
 | [OPERATIONS.md](./OPERATIONS.md) | 启动方式、依赖要求、Docker配置、故障排查 | ⭐ |
+| [RELATED_REPOS.md](./RELATED_REPOS.md) | VCP生态系统相关仓库、Fork/Upstream关系、AI Agent操作规则 | ⭐⭐⭐ |
 
 ---
 
