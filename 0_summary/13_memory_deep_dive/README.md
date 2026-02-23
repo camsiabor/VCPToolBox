@@ -22,6 +22,7 @@
 | **[06_semantic_group_aimemo.md](./06_semantic_group_aimemo.md)** | `SemanticGroupManager.js` + `AIMemoHandler.js` — 语义组激活, 向量增强, 原子写入, AI 分批日记召回, LRU+TTL 缓存 |
 | **[07_meta_thinking_time_parser.md](./07_meta_thinking_time_parser.md)** | `MetaThinkingManager.js` + `TimeExpressionParser.js` — 递归推理链, 自动主题检测, 中文时间表达式解析 |
 | **[08_write_plugins.md](./08_write_plugins.md)** | `DailyNoteWrite` + `LightMemo` + `ThoughtClusterManager` + `AgentDream` — Tag 处理管道, BM25+向量混合检索, 梦境审批门, 四插件对比 |
+| **[09_context_injection_pipeline.md](./09_context_injection_pipeline.md)** | ★ **"AI 如何记得？" / "How Does the AI Remember?"** — 检索记忆注入 LLM 上下文的完整 9 阶段链路: 上下文裁剪 → 变量替换引擎 → RAG 区块注入格式 → LLM API 调用 → VCP 工具循环 → 对话中 RAG 刷新 → 最终 messages 结构图 → token 预算分析 → 全链路调试指南 → 与 LangChain/LangGraph 对比 |
 
 ---
 
