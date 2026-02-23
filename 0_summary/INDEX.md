@@ -47,6 +47,7 @@
 | [10_agent_memory/README.md](./10_agent_memory/README.md) | 记忆四层架构、日记系统、AIMemo、LightMemo、ThoughtCluster、SQLite KV、与 MemGPT/Zep 对比 / 4-layer memory arch, diary system, AIMemo, ThoughtCluster, MemGPT/Zep comparison | ⭐⭐⭐ |
 | [11_agent_rag/README.md](./11_agent_rag/README.md) | TagMemo 浪潮算法完整实现、EPA 加权PCA、残差金字塔、SVD去重、RAGDiaryPlugin、元思考系统、多级缓存、Rerank、与 LlamaIndex/Haystack 对比 / Full TagMemo algorithm, EPA, residual pyramid, SVD dedup, meta-thinking, caching, framework comparison | ⭐⭐⭐ |
 | [12_agent_task_schedule/README.md](./12_agent_task_schedule/README.md) | Cron 调度、ScheduleManager、异步任务、Archery 后台触发、文件监听触发、与 BullMQ/Temporal/n8n 对比 / Cron scheduling, ScheduleManager, async tasks, file watcher triggers, framework comparison | ⭐⭐ |
+| [13_memory_deep_dive/README.md](./13_memory_deep_dive/README.md) | 记忆系统终极深度解析：五层架构、代码级写/读路径、TagMemo V3.7 数学管道、V4 霰弹枪查询、ContextVectorManager、AgentDream、LangChain/LangGraph/LangMem 对比、调试指南 / Ultimate memory deep dive: 5-layer arch, code-level write/read paths, TagMemo V3.7 math, Shotgun Query V4, ContextVectorManager, AgentDream, framework comparison, debug guide | ⭐⭐⭐ |
 
 ---
 
@@ -65,9 +66,10 @@
 | 修改配置参数 / Change a config param | [07_config_deploy § 配置参数](./07_config_deploy/README.md#核心配置参数--core-config-params) |
 | AI Agent 调试技巧 / AI Agent debug tips | [08_ai_agent_guide](./08_ai_agent_guide/README.md) |
 | 理解 VCP 工具调用机制 / Understand VCP tool-call mechanism | [09_agent_calling](./09_agent_calling/README.md) |
-| 理解记忆写入/读取流程 / Understand memory write/read flow | [10_agent_memory](./10_agent_memory/README.md) |
-| 调优 RAG 检索效果 / Tune RAG retrieval quality | [11_agent_rag](./11_agent_rag/README.md) |
+| 理解记忆写入/读取流程 / Understand memory write/read flow | [13_memory_deep_dive §3-5](./13_memory_deep_dive/README.md#3-记忆写入完整代码路径--memory-write--complete-code-path) |
+| 调优 RAG TagMemo 效果 / Tune TagMemo RAG quality | [13_memory_deep_dive §20](./13_memory_deep_dive/README.md#20-ai-coding-agent-调试指南--ai-coding-agent-debug-guide) |
 | 理解/扩展任务调度 / Understand/extend task scheduling | [12_agent_task_schedule](./12_agent_task_schedule/README.md) |
+| 记忆系统终极深度解析 / Memory system ultimate deep dive | [13_memory_deep_dive](./13_memory_deep_dive/README.md) |
 
 ### 按模块 / By Module
 
@@ -76,8 +78,10 @@
 | `server.js` | HTTP 入口、启动编排 / HTTP entry, startup orchestration | [01_architecture](./01_architecture/README.md) |
 | `Plugin.js` | 插件生命周期 / Plugin lifecycle | [02_plugin_system](./02_plugin_system/README.md) |
 | `WebSocketServer.js` | 分布式 WS 骨架 / Distributed WS backbone | [05_distributed](./05_distributed/README.md) |
-| `KnowledgeBaseManager.js` | 向量库/RAG 总控 / Vector DB / RAG control | [03_memory_rag](./03_memory_rag/README.md) |
-| `EPAModule.js` | 语义空间定位 / Semantic space projection | [03_memory_rag](./03_memory_rag/README.md) |
+| `KnowledgeBaseManager.js` | 向量库/RAG 总控 / Vector DB / RAG control | [13_memory_deep_dive](./13_memory_deep_dive/README.md) |
+| `EPAModule.js` | 语义空间定位 / Semantic space projection | [13_memory_deep_dive §10](./13_memory_deep_dive/README.md#10-epa-嵌入投影分析--epa-embedding-projection-analysis) |
+| `Plugin/RAGDiaryPlugin/ContextVectorManager.js` | 会话上下文向量段管理 / Session context vector segments | [13_memory_deep_dive §9](./13_memory_deep_dive/README.md#9-上下文向量管理器--contextvectormanager) |
+| `Plugin/AgentDream/AgentDream.js` | 梦境记忆整合引擎 / Dream memory consolidation engine | [13_memory_deep_dive §14](./13_memory_deep_dive/README.md#14-agentdream-梦境记忆整合--agentdream--dream-memory-consolidation) |
 | `ResidualPyramid.js` | 残差能量分解 / Residual energy decomposition | [03_memory_rag](./03_memory_rag/README.md) |
 | `routes/` | Express 路由层 / Express routing layer | [04_api_routes](./04_api_routes/README.md) |
 | `AdminPanel/` | 管理面板前端 / Admin panel frontend | [06_frontend](./06_frontend/README.md) |
@@ -113,6 +117,7 @@
 | 日期 / Date | 版本 / Version | 描述 / Description |
 |---|---|---|
 | 2026-02-23 | 1.0.0 | 初始创建，覆盖核心模块 / Initial creation, covering core modules |
+| 2026-02-23 | 1.1.0 | 新增 13_memory_deep_dive：五层记忆、TagMemo V3.7数学管道、V4霰弹枪、ContextVectorManager、AgentDream、LangChain/LangGraph/LangMem对比、调试指南 / Add 13_memory_deep_dive with 5-layer memory, TagMemo V3.7 math pipeline, V4 Shotgun, ContextVectorManager, AgentDream, LangChain/LangGraph/LangMem comparison, debug guide |
 
 ---
 
