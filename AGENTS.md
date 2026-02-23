@@ -4,9 +4,23 @@
 **提交：** 3d54cad
 **分支：** xxbb
 
+## 🌐 VCP 生态系统 — 关联仓库
+
+> **AI Agent 必读：** 本仓库是 [lioensky/VCPToolBox](https://github.com/lioensky/VCPToolBox) 的
+> fork。**不要在此 fork 中修改应用代码**；所有变更应来自上游。详细规则见
+> **[docs/RELATED_REPOS.md](./docs/RELATED_REPOS.md)**。
+
+| Fork (camsiabor) | Upstream (lioensky) | 用途 |
+|------------------|---------------------|------|
+| [camsiabor/VCPToolBox](https://github.com/camsiabor/VCPToolBox) *(本仓库)* | [lioensky/VCPToolBox](https://github.com/lioensky/VCPToolBox) | 核心中间层 |
+| [camsiabor/VCPDistributedServer](https://github.com/camsiabor/VCPDistributedServer) | [lioensky/VCPDistributedServer](https://github.com/lioensky/VCPDistributedServer) | 分布式节点 |
+| [camsiabor/VCPChat](https://github.com/camsiabor/VCPChat) | [lioensky/VCPChat](https://github.com/lioensky/VCPChat) | 聊天前端 |
+
+---
+
 ## 📚 完整文档体系
 
-**VCPToolBox 现已拥有完整的全景文档（12个文档，331KB，10,395行）：**
+**VCPToolBox 现已拥有完整的全景文档（13个文档）：**
 
 从 **[docs/DOCUMENTATION_INDEX.md](./docs/DOCUMENTATION_INDEX.md)** 开始浏览完整文档体系，包括：
 - 系统架构与启动序列
@@ -20,6 +34,7 @@
 - 文件清单与职责映射
 - 功能矩阵与处理流程
 - 运维部署与故障排查
+- **关联仓库与生态规则**（[docs/RELATED_REPOS.md](./docs/RELATED_REPOS.md)）
 
 **所有文档特点：**
 - ✅ 高保真、全覆盖、可追溯
