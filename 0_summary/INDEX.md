@@ -20,6 +20,15 @@
 | [07_config_deploy/README.md](./07_config_deploy/README.md) | 配置系统、部署方式、Docker、环境变量 / Config system, deployment, Docker, env vars | ⭐⭐ |
 | [08_ai_agent_guide/README.md](./08_ai_agent_guide/README.md) | AI Coding Agent 快速参考、常见任务模式、调试指南 / AI Coding Agent quick-reference, task patterns, debug guide | ⭐⭐⭐ |
 
+**深度解析系列 / Deep Dive Series**
+
+| 文档 / Document | 内容 / Content | 优先级 / Priority |
+|---|---|---|
+| [09_agent_calling/README.md](./09_agent_calling/README.md) | VCP 调用协议、ToolCallParser、ToolExecutor、Archery、流式/并发处理、与 LangChain/AutoGen 对比 / VCP call protocol, ToolCallParser, ToolExecutor, Archery mode, streaming, framework comparison | ⭐⭐⭐ |
+| [10_agent_memory/README.md](./10_agent_memory/README.md) | 记忆四层架构、日记系统、AIMemo、LightMemo、ThoughtCluster、SQLite KV、与 MemGPT/Zep 对比 / 4-layer memory arch, diary system, AIMemo, ThoughtCluster, MemGPT/Zep comparison | ⭐⭐⭐ |
+| [11_agent_rag/README.md](./11_agent_rag/README.md) | TagMemo 浪潮算法完整实现、EPA 加权PCA、残差金字塔、SVD去重、RAGDiaryPlugin、元思考系统、多级缓存、Rerank、与 LlamaIndex/Haystack 对比 / Full TagMemo algorithm, EPA, residual pyramid, SVD dedup, meta-thinking, caching, framework comparison | ⭐⭐⭐ |
+| [12_agent_task_schedule/README.md](./12_agent_task_schedule/README.md) | Cron 调度、ScheduleManager、异步任务、Archery 后台触发、文件监听触发、与 BullMQ/Temporal/n8n 对比 / Cron scheduling, ScheduleManager, async tasks, file watcher triggers, framework comparison | ⭐⭐ |
+
 ---
 
 ## 🔖 快速查找 / Quick Lookup
@@ -36,6 +45,10 @@
 | 修改管理面板 / Modify admin panel | [06_frontend § AdminPanel](./06_frontend/README.md#adminpanel-管理面板) |
 | 修改配置参数 / Change a config param | [07_config_deploy § 配置参数](./07_config_deploy/README.md#核心配置参数--core-config-params) |
 | AI Agent 调试技巧 / AI Agent debug tips | [08_ai_agent_guide](./08_ai_agent_guide/README.md) |
+| 理解 VCP 工具调用机制 / Understand VCP tool-call mechanism | [09_agent_calling](./09_agent_calling/README.md) |
+| 理解记忆写入/读取流程 / Understand memory write/read flow | [10_agent_memory](./10_agent_memory/README.md) |
+| 调优 RAG 检索效果 / Tune RAG retrieval quality | [11_agent_rag](./11_agent_rag/README.md) |
+| 理解/扩展任务调度 / Understand/extend task scheduling | [12_agent_task_schedule](./12_agent_task_schedule/README.md) |
 
 ### 按模块 / By Module
 
