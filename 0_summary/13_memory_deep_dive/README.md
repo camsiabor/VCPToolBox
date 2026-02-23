@@ -7,6 +7,24 @@
 
 ---
 
+## 📚 子文档目录 / Sub-Document Index
+
+> 本 README 是总览；每个子文档专注于一个模块的完整代码级分析。  
+> This README is the overview; each sub-doc covers one module in full code-level detail.
+
+| 文档 / Document | 覆盖模块 / Modules Covered |
+|---|---|
+| **[01_knowledge_base_manager.md](./01_knowledge_base_manager.md)** | `KnowledgeBaseManager.js` — SQLite schema, VexusIndex 双索引, 文件监听批量管道, TagMemo 调用链, 热调控参数 |
+| **[02_rag_diary_plugin.md](./02_rag_diary_plugin.md)** | `RAGDiaryPlugin.js` — 全占位符语法, 检索路由, Shotgun V4 路径, 聚合检索, 时间感知双路, Rerank, 三级缓存, VCP Info 广播 |
+| **[03_epa_residual_result.md](./03_epa_residual_result.md)** | `EPAModule.js` + `ResidualPyramid.js` + `ResultDeduplicator.js` — 加权 PCA, 投影数学, 残差金字塔 Gram-Schmidt, SVD 潜在主题去重 |
+| **[04_embedding_chunker.md](./04_embedding_chunker.md)** | `EmbeddingUtils.js` + `TextChunker.js` — 并发 Worker Pool, 批次切分, Token 计算, 重叠窗口分块 |
+| **[05_context_vector_manager.md](./05_context_vector_manager.md)** | `ContextVectorManager.js` — 四级向量查找, 衰减聚合, 语义分段(Shotgun 弹药), 逻辑深度 L, 语义宽度 S |
+| **[06_semantic_group_aimemo.md](./06_semantic_group_aimemo.md)** | `SemanticGroupManager.js` + `AIMemoHandler.js` — 语义组激活, 向量增强, 原子写入, AI 分批日记召回, LRU+TTL 缓存 |
+| **[07_meta_thinking_time_parser.md](./07_meta_thinking_time_parser.md)** | `MetaThinkingManager.js` + `TimeExpressionParser.js` — 递归推理链, 自动主题检测, 中文时间表达式解析 |
+| **[08_write_plugins.md](./08_write_plugins.md)** | `DailyNoteWrite` + `LightMemo` + `ThoughtClusterManager` + `AgentDream` — Tag 处理管道, BM25+向量混合检索, 梦境审批门, 四插件对比 |
+
+---
+
 ## 目录 / Table of Contents
 
 1. [设计哲学与全局架构 / Design Philosophy & Global Architecture](#1-设计哲学与全局架构--design-philosophy--global-architecture)
